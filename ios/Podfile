@@ -6,9 +6,10 @@ load File.join(flutter_application_path, 'Flutter', 'podhelper.rb')
 # Убедитесь, что этот путь правильный
 flutter_export_environment_path = File.join(flutter_application_path, 'Flutter', 'flutter_export_environment.sh')
 
-# Используйте 'source' вместо 'load'
+# Загрузите переменные окружения (если нужно)
 if File.exist?(flutter_export_environment_path)
-  eval(File.read(flutter_export_environment_path))
+  # Здесь можно просто отладить, чтобы проверить содержимое файла
+  puts "Flutter export environment file exists at: #{flutter_export_environment_path}"
 end
 
 target 'Runner' do
