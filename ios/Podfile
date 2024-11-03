@@ -1,7 +1,8 @@
 platform :ios, '12.0'
-# Убедитесь, что flutter_export_environment установлен
+
 flutter_application_path = File.expand_path('..', __FILE__)
-load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+load File.join(flutter_application_path, 'Flutter', 'podhelper.rb')
+
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
@@ -9,7 +10,7 @@ target 'Runner' do
   # Добавьте зависимости здесь
   pod 'Firebase', '~> 10.0'
 
-  # Замените на правильный вызов функции
+  # Убедитесь, что вы вызываете правильную функцию
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
