@@ -15,9 +15,8 @@ class _MapScreenState extends State<MapScreen> {
   Location location = Location();
   bool isFragmentTransactionExecuted = false;
   bool isLoading = true;
-  final yandex.Point targetLocation = yandex.Point(latitude: 42.886804, longitude:74.506961);
-//42.876815,74.592473455
-  @override
+  final yandex.Point targetLocation = yandex.Point(latitude: 42.876815, longitude:74.592473455);
+    @override
   void initState() {
     super.initState();
     _checkGps();
