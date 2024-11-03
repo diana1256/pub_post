@@ -5,7 +5,11 @@ load File.join(flutter_application_path, 'Flutter', 'podhelper.rb')
 
 # Убедитесь, что этот путь правильный
 flutter_export_environment_path = File.join(flutter_application_path, 'Flutter', 'flutter_export_environment.sh')
-load flutter_export_environment_path if File.exist?(flutter_export_environment_path)
+
+# Используйте 'source' вместо 'load'
+if File.exist?(flutter_export_environment_path)
+  eval(File.read(flutter_export_environment_path))
+end
 
 target 'Runner' do
   use_frameworks!
