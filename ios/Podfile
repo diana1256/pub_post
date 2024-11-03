@@ -8,8 +8,10 @@ flutter_export_environment_path = File.join(flutter_application_path, 'Flutter',
 
 # Загрузите переменные окружения (если нужно)
 if File.exist?(flutter_export_environment_path)
-  # Здесь можно просто отладить, чтобы проверить содержимое файла
   puts "Flutter export environment file exists at: #{flutter_export_environment_path}"
+  eval(File.read(flutter_export_environment_path)) # Вызываем eval для правильного экспорта переменных
+else
+  puts "Flutter export environment file does not exist at: #{flutter_export_environment_path}"
 end
 
 target 'Runner' do
