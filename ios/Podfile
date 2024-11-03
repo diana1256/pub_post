@@ -4,10 +4,9 @@ target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
-  # Добавьте сюда все зависимости
-  pod 'Firebase/Analytics' # Пример зависимости для Firebase Analytics
+  # Добавьте зависимости здесь
+  pod 'Firebase', '~> 10.0'
 
-  # Automatically include all plugins from the Flutter framework
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
