@@ -2,6 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Это приложение требует доступ к вашему местоположению.</string>
+
+<key>NSLocationAlwaysUsageDescription</key>
+<string>Это приложение требует постоянный доступ к вашему местоположению.</string>
+
+<key>NSCameraUsageDescription</key>
+<string>Это приложение требует доступ к камере для сканирования QR-кодов.</string>
+
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Это приложение требует доступ к библиотеке фотографий.</string>
+
+<key>NSBiometricsUsageDescription</key>
+<string>Это приложение требует доступ к биометрическим данным для аутентификации.</string>
+
+<key>NSUserTrackingUsageDescription</key>
+<string>Это приложение требует разрешение на отслеживание для показа персонализированной рекламы.</string>
+
+<key>NSFaceIDUsageDescription</key>
+<string>Это приложение требует доступ к Face ID для аутентификации.</string>
+
+<key>UIBackgroundModes</key>
+<array>
+    <string>fetch</string>
+    <string>location</string>
+    <string>remote-notification</string>
+</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
