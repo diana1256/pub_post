@@ -1,0 +1,55 @@
+name: PostTime
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  yandex_mapkit: ^4.1.0
+  build_runner: ^2.4.13
+  json_annotation: ^4.7.0
+  provider: ^6.1.2
+  logger: ^2.4.0
+  crypto: ^3.0.6
+  get_it: ^8.0.1
+  flutter_svg: ^2.0.10+1
+  flutter_svg_provider: ^1.0.7
+  dio: ^5.7.0
+  qr_code_scanner_plus: ^2.0.6
+  google_maps_flutter: ^2.9.0
+  location: ^7.0.0
+  permission_handler: ^11.3.1
+  fluttertoast: ^8.2.8
+  shared_preferences: ^2.3.2
+  intl_utils: ^2.8.7
+  intl: ^0.19.0
+  firebase_core: ^3.6.0
+  firebase_database: ^11.1.4
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.8.0
+  http: ^1.2.2
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/vectors/
+    - assets/images/
+    - assets/madd.jpg
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/madd.jpg" # Убедитесь, что путь к изображению правильный

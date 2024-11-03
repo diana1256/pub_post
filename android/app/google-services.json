@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "101130808072",
+    "project_id": "posttime-aa82a",
+    "storage_bucket": "posttime-aa82a.appspot.com",
+    "firebase_url": "https://posttime-aa82a-default-rtdb.firebaseio.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101130808072:android:71f2baa50e2c04a3f69abd",
+        "android_client_info": {
+          "package_name": "com.post.time.pub_post"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwOflS2ouKNZp3gs0zOeyma0tjM7Q7GMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

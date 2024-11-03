@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="29" viewBox="0 0 43 29">
+  <path d="M12.219,1.271L31.53,1.271A4,4 0,0 1,35.53 5.271L35.53,23.745A4,4 0,0 1,31.53 27.745L12.219,27.745A4,4 0,0 1,8.219 23.745L8.219,5.271A4,4 0,0 1,12.219 1.271z"
+      fill="none"
+      stroke="#2879F1"
+      stroke-width="2"/>
+  <path d="M1.813,12.059h39.151v4.898h-39.151z"
+      fill="#2879F1"
+      stroke="#CFE8FE"
+      stroke-width="3"/>
+</svg>

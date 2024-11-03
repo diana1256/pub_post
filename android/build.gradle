@@ -1,0 +1,23 @@
+allprojects {
+    ext {
+        kotlin_version = '2.0.21'
+
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://storage.yandex.ru/yk1/kits/android' } // Добавьте этот репозиторий
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

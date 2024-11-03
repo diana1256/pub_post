@@ -1,0 +1,10 @@
+targets:
+  $default:
+    builders:
+      flutter_icons:
+        enabled: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/madd.jpg" # Убедитесь, что путь к иконке правильный
