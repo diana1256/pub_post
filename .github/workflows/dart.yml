@@ -14,12 +14,20 @@ jobs:
         with:
           channel: 'stable'
           architecture: x64
+
       - run: flutter pub get
       
+      # Clean the iOS build environment
+      - run: flutter clean
+
+      # Re-generate the iOS directory and flutter_export_environment file
+      - run: flutter build ios --debug --no-codesign
+        working-directory: ios
 
       - run: pod repo update
         working-directory: ios
 
+      # Run the final release build
       - run: flutter build ios --release --no-codesign
 
       - run: mkdir Payload
