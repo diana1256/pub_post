@@ -12,3 +12,5 @@ def flutter_install_all_ios_pods(flutter_application_path)
   # Укажите дополнительные поды, если это необходимо
   # pod 'MyCustomPod', :path => 'path_to_my_custom_pod'
 end
+
+
